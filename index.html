@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Calculating Volume and Surface Area of an Icosahedron">
+    <meta name="keywords" content="immaculata, ics2o">
+    <meta name="author" content="Theo Rafuse">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./fav/favicon-16x16.png">
+    <link rel="manifest" href="./fav/site.webmanifest">
+    <link rel="shortcut icon" href="./images/Icosahedron.png">
+    
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Calculating Vol and Surf Area of Icosahedron</title>
+  </head>
+    <body>
+    <script src="./js/script.js"></script>
+    <h1>Volume and Surface Area of an Icosahedron</h1>
+    <img src="./images/Icosahedron.JPEG" alt="E">
+      <!-- This is the code for calculating -->
+      <p>
+      <h3>Calculate for Volume and Surf Area:</h3>
+      <form action="javascript:enterClicked()">
+        <label for="a-value">Edge value:</label>
+        <input type="number" id="a-value" placeholder="Edge" step=".01" min="0"><br><br>
+        <input type="submit" value="Calculate">
+      </form>
+    </p>
+    <!-- Create a space where the user information will be displayed -->
+    <div id="volume-info"></div>
+    <div id="surface-area-info"></div>
+    <p></p>
+
+    <!-- Text explaining what the webpage is for -->
+    <p>This webpage is for calculating the Volume and Surface Area of an Icosahedron. An Icosahedron is a shape that has 20 faces. The formula for the Volume is V = 5(3+sqrt5)/12*a<sup>3</sup>, and the formula for Surface Area is A = 5*sqrt3*a<sup>2</sup>.</p>
+
+    <!-- MDL Radio Buttons -->
+      <center><h2>Did you know how to calculate Volume and Surface Area before visiting this webpage?</h2>
+      <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
+        <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
+        <span class="mdl-radio__label">Yes</span>
+      </label>
+      
+      <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-2">
+        <input type="radio" id="option-2" class="mdl-radio__button" name="options" value="2">
+        <span class="mdl-radio__label">No</span>
+      </label></center>
+      
+  </body>
+</html>
